@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Hero Section</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Hero Section</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav aria-label="Main Navigation">
+      <div class="logo">
+        <img
+          aria-label="Logo Image"
+          src="./img/logo-removebg-preview.png"
+          alt="logo picture"
+        />
+      </div>
+      <ul>
+        <li><a href="#" aria-label="Home Page">Home</a></li>
+        <li><a href="#" aria-label="About Us">About</a></li>
+        <li><a href="#" aria-label="Our Services">Services</a></li>
+        <li><a href="#" aria-label="Contact Us">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Navigation Bar -->
-  <nav aria-label="Main Navigation">
-    <div class="logo">
-        <img aria-label="Logo Image" src="./img/logo-removebg-preview.png" alt="logo picture">
-    </div>
-    <ul>
-      <li><a href="#" aria-label="Home Page">Home</a></li> 
-      <li><a href="#" aria-label="About Us">About</a></li>
-      <li><a href="#" aria-label="Our Services">Services</a></li>
-      <li><a href="#" aria-label="Contact Us">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <video
+        autoplay
+        muted
+        loop
+        aria-label="Background Video"
+        role="presentation"
+      >
+        <source src="./video/wallpaper.mp4" type="video/mp4" />
+        <source src="./video/wallpaper.webm" type="video/webm" />
+        <source src="./video/wallpaper.ogv" type="video/ogg" />
+        Your browser does not support the video tag.
+      </video>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <video src="./video/wallpaper.mp4" autoplay muted loop aria-label="Background Video" role="presentation"></video>
-    <div class="hero-overlay">
-      <h1 aria-label="Welcome Heading">Welcome to Our Website 😊</h1>
-      <p aria-label="Website Description">Your journey to success begins here. We &#39;re here to guide you every step of the way.</p>
-      <button aria-label="Get Started Button">Get Started &rarr;</button> 
-    </div>
-  </section>
-
-</body>
+      <div class="hero-overlay">
+        <h1 aria-label="Welcome Heading">Welcome to Our Website 😊</h1>
+        <p aria-label="Website Description">
+          Your journey to success begins here. We &#39;re here to guide you
+          every step of the way.
+        </p>
+        <button aria-label="Get Started Button">Get Started &rarr;</button>
+      </div>
+    </section>
+  </body>
 </html>
